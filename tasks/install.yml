@@ -1,4 +1,5 @@
-- stat: path={{ oxid_root }}
+- name: Get Oxid install directory
+  stat: path={{ oxid_root }}
   register: oxidDir
 
 - name: Install Oxid via oxrun cli
