@@ -1,0 +1,17 @@
+- stat: path=/usr/local/bin/{{ oxid_oxrun_executable }}
+  register: swCLIExec
+
+- name: Download Oxid CLI oxrun
+  tags: oxid
+  command: wget --no-check-certificate {{ oxid_oxrun_download_host }}/{{ oxid_oxrun_executable }}.phar
+  when: not swCLIExec.stat.exists
+
+- name: Change permissions for oxrun
+  tags: oxid
+  command: chmod +x {{ oxid_oxrun_executable }}.phar
+  when: not swCLIExec.stat.exists
+
+- name: Make oxrun as executable
+  tags: oxid
+  command: sudo mv {{ oxid_oxrun_executable }}.phar /usr/local/bin/{{ oxid_oxrun_executable }}
+  when: not swCLIExec.stat.exists

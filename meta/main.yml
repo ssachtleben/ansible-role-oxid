@@ -1,0 +1,12 @@
+dependencies:
+  - role: kbrebanov.unzip
+
+  - role: geerlingguy.php
+    php_packages:
+      - php5
+      - php5-common
+      - php5-mcrypt
+      - php5-curl
+      - php5-gd
+
+  - role: ssachtleben.apache-mcrypt

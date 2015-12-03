@@ -1,0 +1,2 @@
+- include: cli.yml tags=oxid
+- include: install.yml tags=oxid

@@ -1,0 +1,10 @@
+oxid_oxrun_download_host: "https://raw.githubusercontent.com/marcharding/oxrun/master"
+oxid_oxrun_executable: "oxrun"
+
+oxid_version: "v4.9.6"
+oxid_root: "/var/www/oxid"
+
+oxid_webuser: "www-data"
+oxid_webgroup: "www-data"
+
+oxid_config: []
