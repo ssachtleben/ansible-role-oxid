@@ -1,3 +1,18 @@
+---
+galaxy_info:
+  author: Sebastian Sachtleben
+  description: Downloads and installs an oxid shop.
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+  - name: EL
+    versions:
+    - all
+  galaxy_tags:
+    - oxid
+    - shop
+    - web
+
 dependencies:
   - role: kbrebanov.unzip
 
