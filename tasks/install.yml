@@ -6,6 +6,7 @@
   tags: oxid
   command: "oxrun install:shop
     --oxidVersion={{ oxid_version }} --installationFolder={{ oxid_root }} --shopURL={{ oxid_config.shop_url }}
-    --dbHost={{ oxid_config.db_host }} --dbUser={{ oxid_config.db_user }} --dbPwd={{ oxid_config.db_pass }}
+    --dbHost={{ oxid_config.db_host }} --dbName={{ oxid_config.db_name }} --dbUser={{ oxid_config.db_user }}
+    --dbPwd={{ oxid_config.db_pass }}
     --adminUser={{ oxid_config.admin_email }} --adminPassword={{ oxid_config.admin_pass }}"
   when: oxidDir.stat.isdir is not defined or not oxidDir.stat.isdir
