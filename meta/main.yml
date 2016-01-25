@@ -13,6 +13,8 @@ galaxy_info:
     - shop
     - web
 
+allow_duplicates: yes
+
 dependencies:
   - role: kbrebanov.unzip
 
